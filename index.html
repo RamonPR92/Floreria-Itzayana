@@ -118,127 +118,343 @@
             <div class="row ">
                 <div class="col-lg-4">
                     <div class="card" >
-                        <img class="card-img-top" src="images/galeria/centros/centros (2).jpeg" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="images/galeria/centros/centros (2).jpg" alt="Card image cap">
+                        <div class="card-body" id="centros">
                             <h5 class="card-title">Centros de mesa</h5>
-                            <a href="images/galeria/centros/centros (1).jpeg" data-lightbox="centros" class="btn btn-secondary">Ver galeria</a>
-                            <a href="images/galeria/centros/centros (2).jpeg" data-lightbox="centros"></a>
-                            <a href="images/galeria/centros/centros (3).jpeg" data-lightbox="centros"></a>
-                            <a href="images/galeria/centros/centros (4).jpeg" data-lightbox="centros"></a>
-                            <a href="images/galeria/centros/centros (5).jpeg" data-lightbox="centros"></a>
-                            <a href="images/galeria/centros/centros (6).jpeg" data-lightbox="centros"></a>
+                            <script>
+                                var imagenes = new Array();
+                                for (let index = 1; index <= 57; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                var nombreCarpeta = 'centros';
+                                var galeria = document.getElementById('centros');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card"  >
-                        <img class="card-img-top" src="images/galeria/bouquet/bouquet (1).jpeg" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="images/galeria/bouquet/bouquet (1).jpg" alt="Card image cap">
+                        <div class="card-body" id="bouquet">
                             <h5 class="card-title">Bouquet</h5>
-                            <a href="images/galeria/bouquet/bouquet (1).jpeg" data-lightbox="bouquet" class="btn btn-secondary">Ver galeria</a>
-                            <a href="images/galeria/bouquet/bouquet (2).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (3).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (4).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (5).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (6).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (7).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (8).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (9).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (10).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (11).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (12).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (13).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (14).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (15).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (16).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (17).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (18).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (19).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (20).jpeg" data-lightbox="bouquet"></a>
-                            <a href="images/galeria/bouquet/bouquet (21).jpeg" data-lightbox="bouquet"></a>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 204; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'bouquet';
+                                galeria = document.getElementById('bouquet');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>                      
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card" >
-                        <img class="card-img-top" src="images/galeria/design/design (14).jpeg" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="images/galeria/design/design (14).jpg" alt="Card image cap">
+                        <div class="card-body" id="design"> 
                             <h5 class="card-title">Diseño</h5>
-                            <a href="images/galeria/design/design (1).jpeg" data-lightbox="design" class="btn btn-secondary">Ver galeria</a>
-                            <a href="images/galeria/design/design (2).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (3).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (4).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (5).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (6).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (7).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (8).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (9).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (10).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (11).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (12).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (13).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (14).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (15).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (16).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (17).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (18).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (19).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (20).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (21).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (22).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (23).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (24).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (25).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (26).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (27).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (28).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (29).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (30).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (31).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (32).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (33).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (34).jpeg" data-lightbox="design"></a>
-                            <a href="images/galeria/design/design (35).jpeg" data-lightbox="design"></a>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 242; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'design';
+                                galeria = document.getElementById('design');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>                
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="card"  >
-                        <img class="card-img-top" src="images/galeria/ramos/ramos (6).jpeg" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="images/galeria/ramos/ramos (11).jpg" alt="Card image cap">
+                        <div class="card-body" id="ramos">
                             <h5 class="card-title">Ramos</h5>
-                            <a href="images/galeria/ramos/ramos (1).jpeg" data-lightbox="ramos" class="btn btn-secondary">Ver galeria</a>
-                            <a href="images/galeria/ramos/ramos (2).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (3).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (4).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (5).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (6).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (7).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (8).jpeg" data-lightbox="ramos"></a>
-                            <a href="images/galeria/ramos/ramos (9).jpeg" data-lightbox="ramos"></a>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 125; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'ramos';
+                                galeria = document.getElementById('ramos');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>                
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-4">
                     <div class="card"  >
-                        <img class="card-img-top" src="images/galeria/funebre/funebre (6).jpeg" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="images/galeria/funebre/funebre (9).jpg" alt="Card image cap">
+                        <div class="card-body" id="funebre">
                             <h5 class="card-title">Funebres</h5>
-                            <a href="images/galeria/funebre/funebre (1).jpeg" data-lightbox="funebre" class="btn btn-secondary">Ver galeria</a>
-                            <a href="images/galeria/funebre/funebre (2).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (3).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (4).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (5).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (6).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (7).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (8).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (9).jpeg" data-lightbox="funebre"></a>
-                            <a href="images/galeria/funebre/funebre (10).jpeg" data-lightbox="funebre"></a>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 44; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'funebre';
+                                galeria = document.getElementById('funebre');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/tulipanes/tulipanes (1).jpg" alt="Card image cap">
+                        <div class="card-body" id="tulipanes">
+                            <h5 class="card-title">Tulipanes</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 39; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'tulipanes';
+                                galeria = document.getElementById('tulipanes');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/canastas/canastas (1).jpg" alt="Card image cap">
+                        <div class="card-body" id="canastas">
+                            <h5 class="card-title">Canastas</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 62; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'canastas';
+                                galeria = document.getElementById('canastas');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/orquideas/orquideas (5).jpg" alt="Card image cap">
+                        <div class="card-body" id="orquideas">
+                            <h5 class="card-title">Orquideas</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 34; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'orquideas';
+                                galeria = document.getElementById('orquideas');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/suculentas/suculentas (4).jpg" alt="Card image cap">
+                        <div class="card-body" id="suculentas">
+                            <h5 class="card-title">Suculentas</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 17; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'suculentas';
+                                galeria = document.getElementById('suculentas');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/peluches/peluches (24).jpg" alt="Card image cap">
+                        <div class="card-body" id="peluches">
+                            <h5 class="card-title">Peluches</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 35; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'peluches';
+                                galeria = document.getElementById('peluches');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/templo/templo (1).jpg" alt="Card image cap">
+                        <div class="card-body" id="templo">
+                            <h5 class="card-title">Arreglos para templos</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 6; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'templo';
+                                galeria = document.getElementById('templo');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"  >
+                        <img class="card-img-top" src="images/galeria/habitacion/habitacion (5).jpg" alt="Card image cap">
+                        <div class="card-body" id="habitacion">
+                            <h5 class="card-title">Arreglos para habitacion</h5>
+                            <script>
+                                imagenes = new Array();
+                                for (let index = 1; index <= 8; index++) {
+                                    imagenes.push(index);            
+                                }
+
+                                nombreCarpeta = 'habitacion';
+                                galeria = document.getElementById('habitacion');
+                                for(imagen of imagenes) {
+                                    if(imagen == 1){
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}" class="btn btn-secondary">Ver galeria</a>
+                                        `
+                                    }else{
+                                        galeria.innerHTML += `
+                                        <a href="images/galeria/${nombreCarpeta}/${nombreCarpeta} (${imagen}).jpg" data-lightbox="${nombreCarpeta}"</a>
+                                        `  
+                                    }
+                                }
+                            </script>              
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
